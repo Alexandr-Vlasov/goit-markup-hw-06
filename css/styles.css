@@ -753,16 +753,13 @@ color: #f4f4fd;
 /*opacity: 0;
 visibility: hidden;
 pointer-events: none;*/
-opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
 }
 
-.is-open {
+/*.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
+}*/
 
 .modal {
     position: absolute;
