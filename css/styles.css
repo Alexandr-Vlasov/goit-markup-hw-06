@@ -99,7 +99,7 @@ img {
     top: 0;
     visibility: hidden;
     opacity: 0;
-    /*pointer-events: 0;*/
+    pointer-events: 0;
     padding: 24px 24px 40px 16px;
     display: flex;
     flex-direction: column;
@@ -107,11 +107,11 @@ img {
     z-index: 999;
 }
 
-/*.is-open {
+.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}*/
+}
 
 .mob-close {
     display: flex;
@@ -755,11 +755,11 @@ visibility: hidden;
 pointer-events: none;
 }
 
-/*.is-open {
+.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}*/
+}
 
 .modal {
     position: absolute;
@@ -800,7 +800,6 @@ pointer-events: none;
 .modal-close:hover {
     background-color: #404bbf;
     border: none;
-    /*transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
     fill: #ffffff;
 }
 
@@ -856,8 +855,7 @@ position: relative;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(46, 47, 66, 0.4);
- /*   margin-bottom: 8px;*/
-}
+ }
 
 .modal-input:focus {
     border-color: #4D5AE5;
@@ -877,6 +875,7 @@ position: relative;
 
 .modal-input-icon {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .user-name .user-phone .user-email {
@@ -1085,12 +1084,16 @@ width: 768px;
   .icon-menu-btn {
     display: none;
 }
+
+.mob-menu {
+    display: none;
+}
   
 /*--------------hero-768---------------------*/
 
 .hero {
 padding: 112px 0;
-/*width: 768px;*/
+width: 100%;
 background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -1112,6 +1115,7 @@ background-image: linear-gradient(to bottom,
 .hero-title {
     max-width: 496px;
     margin-bottom: 36px;
+    line-height: 60px;
     font-size: 56px;
 }
 
@@ -1303,7 +1307,6 @@ max-width: 264px;
 
 /* ----------------hero-1158------------------- */
 .hero {
-    width: 100%;
     padding: 188px 0;
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
@@ -1323,7 +1326,6 @@ max-width: 264px;
 }
 
 .hero-title {
-    font-size: 56px;
     margin-bottom: 48px;
 }
 
@@ -1373,7 +1375,6 @@ max-width: 264px;
  /*----------- team 1158--------------- */
 
  .team {
-     /*width: 1158px;*/
      padding: 120px 0;
      margin: 0 auto;
  }
